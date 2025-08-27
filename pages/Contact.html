@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
-    <h1>Contact Us</h1>
-</body>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contactStyle.css" />
+    <script src="../script/navbar.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="content-wrapper">
+          <div class="header-content">
+            <div class="logo-section">
+              <img
+                src="../assets/images/Abz Logo Red.png"
+                alt="Car Rental Logo"
+                class="logo-icon"
+              />
+              <span class="logo-text">Autobotz Travels</span>
+            </div>
+
+            <nav class="nav-menu">
+              <a href="./CarRentalHomepage.html" class="nav-item">Home</a>
+              <a href="./Vehiclespage.html" class="nav-item">Vehicles</a>
+              <a href="./AboutUs.html" class="nav-item">About Us</a>
+              <a href="./Contact.html" class="nav-item active">Contact Us</a>
+            </nav>
+
+            <button class="hamburger">☰</button>
+            <!--@media-->
+
+            <div class="contact-section">
+              <div class="contact-icon">
+                <img src="../assets/images/img_icon_bg.svg" alt="Phone Icon" />
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Need help?</span>
+                <span class="contact-number">+91 81226 66644</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="contact-hero-section">
+        <h1 class="contact-hero-title fade-up">Contact Us</h1>
+        <p class="contact-breadcrumb fade-up">
+          <span class="home">Home /</span>
+          <span class="current"> Contact Us</span>
+        </p>
+      </section>
+
+      <!-- Booking Section -->
+      <section class="contact-booking-section">
+        <div class="contact-booking-wrapper">
+          <h2 class="contact-booking-title fade-up">Book your car</h2>
+          <form id="whatsappContactForm" class="contact-form-wrapper fade-up">
+            <input
+              type="text"
+              id="userName"
+              class="contact-form-input"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="userEmail"
+              class="contact-form-input"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              id="userPhone"
+              class="contact-form-input"
+              placeholder="Phone Number"
+              required
+            />
+            <textarea
+              id="userMessage"
+              class="contact-form-input"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="contact-book-button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact Info and Map Section -->
+      <section class="contact-info-map-section">
+        <div class="contact-info-map-wrapper">
+          <!-- Contact Info -->
+          <div class="contact-details-box">
+            <h3>Get in Touch</h3>
+            <p>
+              <strong>Address:</strong>23, Ramraj Nagar, Kovilpalayam, Tamil
+              Nadu 641107
+            </p>
+            <p><strong>Email:</strong> enquiry@autobotztravels.com</p>
+            <p><strong>Phone:</strong> +91 81226 66644</p>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101352.27158312121!2d77.07260387148946!3d11.158214400920881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f9c34adf4d87%3A0x8e832cfae1b728d8!2sAUTOBOTZ%20TOURS%20%26%20TRAVELS!5e0!3m2!1sen!2sin!4v1756231836454!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content-wrapper">
+          <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-left">
+              <div class="footer-logo-section">
+                <img
+                  src="../assets/images/Abz Logo Red.png"
+                  alt="Autobotz Logo"
+                  class="footer-logo"
+                />
+                <span class="footer-logo-text">Autobotz Travels</span>
+              </div>
+              <div class="footer-social">
+                <a
+                  href="https://www.facebook.com/people/Autobotz-Tours-Travels/61574034549647/"
+                  ><img src="../assets/images/img_group.svg" alt="Facebook"
+                /></a>
+                <a href="https://www.instagram.com/autobotztouring"
+                  ><img
+                    src="../assets/images/img_group_black_900.svg"
+                    alt="Instagram"
+                /></a>
+                <a
+                  href="https://youtube.com/@autobotztouring?si=hu-5oDF-ySNWKDEV"
+                  ><img
+                    src="../assets/images/img_group_24x22.svg"
+                    alt="YouTube"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-middle">
+              <h3 class="footer-section-title">Contact Us</h3>
+              <ul class="footer-contact-list">
+                <li>
+                  <img src="../assets/images/location_on.svg" alt="Location" />
+                  <span>Kovilpalayam, Tamil Nadu</span>
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/img_icon_bg_red_900.svg"
+                    alt="Email"
+                  />
+                  <span>enquiry@autobotztravels.com</span>
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/img_icon_bg_red_900_40x40.svg"
+                    alt="Phone"
+                  />
+                  <span>+91 81226 66644</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+              <h3 class="footer-section-title">Navigate</h3>
+              <ul class="footer-links">
+                <li><a href="./CarRentalHomepage.html">Home</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Vehiclespage.html">Vehicles</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© Copyright Autobotz Travels 2025.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Select elements to animate
+      const revealElements = document.querySelectorAll(
+        ".contact-hero-title, .contact-breadcrumb, .contact-booking-title, .contact-form-wrapper, .footer-content"
+      );
+
+      // Apply base animation classes
+      revealElements.forEach((el) => el.classList.add("fade-up"));
+
+      // Reveal on scroll
+      const revealOnScroll = () => {
+        let windowHeight = window.innerHeight;
+        revealElements.forEach((el) => {
+          let elementTop = el.getBoundingClientRect().top;
+          if (elementTop < windowHeight - 50) {
+            el.classList.add("show");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+    <script src="../script/message.js"></script>
+  </body>
 </html>
